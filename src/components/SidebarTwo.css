@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+.sidebarTwo {
+  width: 3rem;
+  height: 100vh;
+  position: fixed;
+  background-color: #F9F9F9;
+  transition: width 200ms ease;
+  padding: 0 0 16px;
+  border-top-right-radius: 10px;
+}
+.sidebarTwo.open {
+  width: 240px;
+}
+.sidebarNavTwo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.sidebarNavTwo::-webkit-scrollbar {
+  display: none;
+}
+.blue-text {
+  color: #2d9acb;
+}
+.white-text {
+  color: #00000;
+}
+.sidebarItem {
+  width: 95%;
+  border-top: 1px solid gray;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.sidebarTwoLink {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  text-decoration: none;
+  transition: 600ms;
+  font-family: Assistant;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: #000000;
+}
+.sidebarItem:first-child {
+  border-top: none;
+  margin-top: 0rem;
+}
+.sidebarItem:first-child:hover {
+  background-color: #ffffff;
+  border-top-right-radius: 10px;
+}
+
+.sidebarItem:hover {
+  background-color: #ffffff;
+}
+.sidebarTwoLink svg {
+  min-width: 2rem;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+.sidebarTwo.open .link-text {
+  display: block;
+}
+.link-text {
+  display: none;
+  margin-left: 1rem;
+  font-size: 13px;
+}
+.dropdownIcon {
+  display: none;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.sidebarTwo.open .dropdownIcon {
+  display: block;
+}
+.sidebarActionButton {
+  cursor: pointer;
+}
+.sidebarTwo.open .sidebarActionButton {
+  display: flex;
+  justify-content: space-between;
+}
+.settings {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+}
+.settings:hover {
+  background-color: #ffffff;
+}
+.settings svg {
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  color: #000000;
+  cursor: pointer;
+}
+
+.dropdownLink {
+  width: 100%;
+  background-color: #f9f9f9;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  cursor: pointer;
+  justify-content: center;
+}
+.dropdownLink:hover span {
+  border-bottom: 2px solid #000000;
+}
+.is-active {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: #000000;
+  font-family: 'Assistant', sans-serif;
+}
+.dropdown-text {
+  font-size: 14px;
+}
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+li {
+  list-style: none;
+}
+.h-100 {
+  height: 100%;
+}
+
+.sidebarUser {
+  align-items: center;
+  height: 3rem;
+  text-decoration: none;
+  transition: 600ms;
+  font-family: Assistant;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  background-color: #f9f9f9;
+  border: none;
+}
+.sidebarUser span {
+  color: #000000;
+}
+.sidebarUser:hover {
+  background-color: #f9f9f9;
+}
